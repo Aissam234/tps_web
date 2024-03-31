@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - AISSAM LAKHYARI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+.container .left_side{
+    position: relative;
+    background: #003147;
+    padding: 40px;
+}
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.profileText .imgBox{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profileText .imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profileText h2{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profileText h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.contactInfo {
+    padding-top: 40px;
+}
+.title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contactInfo ul{
+    position: relative;
+}
+.contactInfo ul li{
+    list-style: none;
+    position: relative;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contactInfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+.contactInfo ul li span{
+    color: #fff;
+    font-weight: 300;
+}
+.contactInfo.education h5{
+    color: #03a9f4;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+.contactInfo.education li{
+    margin-bottom: 15px;
+}
+.contactInfo.education h4{
+    color: #fff;
+    font-weight: 500;
+}
+.contactInfo.language .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background:black;
+    display: block;
+    margin-top: 5px;
+}
+.contactInfo.language .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+
+.container .right_side{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+.about{
+    margin-bottom: 50px;
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+.title2{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+p{
+    color: #333;
+}
+.design{
+    margin-top: 20px;
+}
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.about .box .project_year{
+    min-width: 150px;
+}
+.about .box .project_year h5{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+.about .box .text h4{
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-size: 16px;
+}
+.text a{
+    color: #fff;
+    text-decoration: none;
+}
+.skills .box{
+    position: relative;
+    width:100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.skills .box h4{
+    text-transform: uppercase;
+    color: #848c99;
+    font-weight: 500;
+    cursor: pointer;
+}
+.skills .box .percent{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
+}
+.skills .box .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+.interest ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.interest ul li{
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.interest ul li .fa{
+    color: #03a9f4;
+    font-size: 18px;
+    width: 20px;
+}
+@media (max-width: 1000px)
+{
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .interest ul{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width: 600px)
+{
+    .about .box{
+        flex-direction: column;
+    }
+    .about .box .project_year{
+        min-width:150px;
+        margin-bottom: 5px;
+    }
+    .interest ul{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left_side">
+            <div class="profileText">
+                <div class="imgBox">
+                    <img src="IMG_9140.JPG" alt="">
+                </div>
+                <h2>AISSAM LAKHYARI<br><span>engineering student</span></h2>
+            </div>
+
+            <div class="contactInfo">
+                <h3 class="title">Contact Info</h3>
+                <ul>
+                    <li>
+                        <span class="icon"><i class="fa fa-volume-control-phone" aria-hidden="true"></i></span>
+                        <span class="text">+212-690992767</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <span class="text">issamlakhyari@gmail.com</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
+                        <span class="text"><a href="https://brtoula.netlify.app/" target="_blank">mywebsite</a></span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                        <span class="text"><a href="https://www.linkedin.com/in/aissam-lakhyari-14b3692a7/" target="_blank">linkdin</a></span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span class="text">MOROCCO</span>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="contactInfo education">
+                <h3 class="title">EDUCATION</h3>
+                <ul>
+                    <li>
+                        <h5>2021 - 2023</h5>
+                        <h4> Preparatory Sections (math , physics , chimie , geology )</h4>
+                        <h4>Ecole Nationale Des Sciences Appliquees D'AL-Hoceima </h4>
+                    </li>
+                    <li>
+                        <h5>2023 - 2026</h5>
+                        <h4>Formation : Digital Transformation and Artificial Intelligence</h4>
+                        <h4>Ecole Nationale Des Sciences Appliquees D'AL-Hoceima </h4>
+                    </li>
+                    <li>
+                        <h5>2021 - 2026</h5>
+                        <h4>Diploma in Digital Transformation and Artificial Intelligence</h4>
+                        <h4>Ecole Nationale Des Sciences Appliquees D'AL-Hoceima </h4>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="contactInfo language">
+                <h3 class="title">LANGUAGES</h3>
+                <ul>
+                    <li>
+                        <span class="text" title="80%">English</span>
+                        <span class="percent">
+                            <div style="width: 80%;"></div>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="text" title="50%">French</span>
+                        <span class="percent">
+                            <div style="width: 50%;"></div>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="text" title="90%">Tamazight</span>
+                        <span class="percent">
+                            <div style="width: 90%;"></div>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+
+
+        </div>
+
+        <div class="right_side">
+            <div class="about">
+                <h2 class="title2">Profile</h2>
+                <p>As an Engineering student specializing in Digital Transformation and Artificial Intelligence (AI) at ENSAH, I possess a strong foundation in both theoretical knowledge and practical skills essential for navigating the dynamic landscape of modern technology.</p>
+                    <br> <hr><p class="design">My academic pursuits and extracurricular activities reflect my passion for innovation and problem-solving in the realm of digital transformation and AI.
+                </p>
+            </div>
+            <div class="about">
+                <h2 class="title2">Experience</h2>
+                <div class="box">
+                    <div class="project_year">
+                        <h5>2023 - 2024</h5>
+                        <h5>Cleub CCT</h5>
+                    </div>
+                    <div class="text">
+                        <h4>Designer</h4>
+                        <p>Designed promotional materials such as posters, banners, and social media graphics.
+                            <br>Collaborated with team members to conceptualize and execute design projects.
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="project_year">
+                        <h5>2023 - 2024</h5>
+                        <h5>my own game</h5>
+                    </div>
+                    <div class="text">
+                        <h4>Game</h4>
+                        <p>Developed a game application using Python programming language as a personal project.
+                            <br>Designed to provide entertainment and challenge for users through interactive gameplay.
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="project_year">
+                        <h5>2023 - 2024</h5>
+                        <h5>Project C</h5>
+                    </div>
+                    <div class="text">
+                        <h4>Developper</h4>
+                        <p>Developed a library management system using C language as part of academic coursework.</p>
+                        <p>Designed to efficiently manage library resources, including books, patrons, and transactions.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about skills">
+                <h2 class="title2">Professional Skills</h2>
+                <div class="box">
+                    <h4 title="70%">HTML</h4>
+                    <div class="percent">
+                        <div style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4 title="60%">CSS</h4>
+                    <div class="percent">
+                        <div style="width: 60%;"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4 title="60%">PYTHON</h4>
+                    <div class="percent">
+                        <div style="width: 60%;"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4 title="50%">JAVA</h4>
+                    <div class="percent">
+                        <div style="width: 50%;"></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <h4 title="90%">C</h4>
+                    <div class="percent">
+                        <div style="width: 90%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about interest">
+                <h2 class="title2">interest</h2>
+                <ul>
+                    <li><i class="fa fa-gamepad" aria-hidden="true"></i>Gaming</li>
+                    <li><i class="fa fa-smile-o" aria-hidden="true"></i>Parkour</li>
+                    <li><i class="fa fa-music" aria-hidden="true"></i>Music</li>
+                    <li><i class="fa fa-book" aria-hidden="true"></i>Philosophie</li>
+                </ul>
+            </div>
+
+            <div class="about flex">
+                <h2 class="title2">engineer in process ...</h2>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+</html>
